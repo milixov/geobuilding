@@ -1,0 +1,22 @@
+@import 'variables.scss';
+
+.container {
+  display: grid;
+  gap: $dimen-layout-gap;
+  padding: $dimen-layout-padding;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: "header main" "aside main";
+  grid-template-rows: $dimen-header calc(100vh - $dimen-header - $dimen-layout-padding * 2 - $dimen-layout-gap);
+
+  header {
+    grid-area: header;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  main {
+    grid-area: main;
+  }
+}

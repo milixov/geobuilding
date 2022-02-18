@@ -5,12 +5,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "database": "./node_modules/.bin/json-server --watch database.json --port 5000",
+    "fire": "npm-run-all --parallel database dev"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.4.2",
+    "@mui/material": "^5.4.2",
+    "@mui/styled-engine-sc": "^5.4.2",
+    "axios": "^0.26.0",
+    "classnames": "^2.3.1",
+    "formik": "^2.2.9",
+    "json-server": "^0.17.0",
+    "leaflet": "^1.7.1",
     "next": "12.0.10",
+    "npm-run-all": "^4.1.5",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-leaflet": "^3.2.5",
+    "react-leaflet-universal": "^2.2.1",
+    "react-loading-skeleton": "^3.0.3",
+    "react-query": "^3.34.15",
+    "sass": "^1.49.7",
+    "styled-components": "^5.3.3",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "17.0.18",
